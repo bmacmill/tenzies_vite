@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0B2434;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+}
+/* note: using class name Capital letter as per WDBC recommendations */
+
+/* center the game on screen */
+.Container{
+  display: flex;
+  width: 100vw;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: #F5F5F5;
+  height: 400px;
+  max-width: 800px;
+  border-radius: 0.5em;
+  padding: 1.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+.Title{
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.Instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+}
+
+
+.Die {
+  background-color: white; 
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 4px 4px 0px #00000026;  
+  border-radius: 0.625em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.625em;
+  gap: 1.25em;
+  cursor: pointer;
+}
+
+.DieNumber {
+    font-size: 2rem;  
+}
+
+.DieContainer {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 1.25em;
+}
+
+.RollButton{
+  width: 150px;
+  height: 50px;
+  margin: 0 auto;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.25rem;
+  background-color:#5035FF;
+  color: white;
+  border: none;
+  border-radius: .5em;
+  cursor: pointer;
+}
+
+/* shadow to make like button is 'clicked' */
+.RollButton:active{
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
